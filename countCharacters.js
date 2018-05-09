@@ -27,6 +27,3 @@ function splitLetters(newinput) {
 }
 
 console.log(countLetters("lighthouse in the house"))
-// console.log(finalObject)
-// console.log(noSpace("lighthouse in the house"))
-// console.log(splitLetters("lighthouse in the house"))
