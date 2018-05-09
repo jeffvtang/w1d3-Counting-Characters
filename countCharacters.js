@@ -3,14 +3,18 @@ let finalObject = {};
 function countLetters(input) {
   input = splitLetters(input)
   // return input
-  for (let i = 0; i < input.length; i++){
-    finalObject[input[i]] = 1
+  for (let i = 0; i < input.length; i++) {
+    if (finalObject[input[i]] == undefined) {
+      finalObject[input[i]] = 1
+    } else {
+      finalObject[input[i]] += 1
+    }
   }
   return finalObject
 }
 
-//for loop, each letter in the array
-//if else, if character exists +1 to value, else push attribute then +1 to value
+// for loop, each letter in the array
+// if else, if character exists +1 to value, else attribute value = 1
 
 function noSpace(oginput) {
   oginput = oginput.split(' ').join('');
