@@ -2,9 +2,8 @@ let finalObject = {};
 
 function countLetters(input) {
   input = splitLetters(input)
-  // return input
   for (let i = 0; i < input.length; i++) {
-    if (finalObject[input[i]] == undefined) {
+    if (finalObject[input[i]] === undefined) {
       finalObject[input[i]] = 1
     } else {
       finalObject[input[i]] += 1
